@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration | Verchas Academy</title>
+
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#f2f4f8;
+}
+.container{
+  max-width:700px;
+  margin:40px auto;
+  background:#ffffff;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+h1{
+  text-align:center;
+  color:#003366;
+  margin-bottom:25px;
+}
+h3{
+  margin-top:25px;
+  color:#004aad;
+}
+input, select, textarea, button{
+  width:100%;
+  padding:12px;
+  margin-top:12px;
+  font-size:1em;
+}
+textarea{resize:none}
+button{
+  background:#004aad;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:1.1em;
+  cursor:pointer;
+}
+button:hover{
+  background:#003366;
+}
+.note{
+  font-size:0.9em;
+  color:#555;
+  margin-top:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Registration Form</h1>
+
+<form action="https://formsubmit.co/verchas@outlook.com" method="POST">
+
+<h3>Student Details</h3>
+<input type="text" name="Student Name" placeholder="Student Name" required>
+<input type="text" name="Father Name" placeholder="Father's Name" required>
+
+<h3>Academic Information</h3>
+<select name="Standard" required>
+  <option value="">Standard / Class</option>
+  <option>Class 9</option>
+  <option>Class 10</option>
+  <option>Class 11</option>
+  <option>Class 12</option>
+</select>
+
+<select name="Board" required>
+  <option value="">Board</option>
+  <option>CBSE</option>
+  <option>ICSE</option>
+  <option>UP Board</option>
+  <option>Other</option>
+</select>
+
+<select name="Medium" required>
+  <option value="">Medium of Education</option>
+  <option>English</option>
+  <option>Hindi</option>
+</select>
+
+<input type="text" name="Current School/College" placeholder="Current School / College" required>
+
+<h3>Academic Performance</h3>
+<input type="number" name="High School Marks (%)" placeholder="High School Marks (%)" min="0" max="100" required>
+<input type="text" name="Inter Marks (%)" placeholder="Intermediate Marks (%) / Appearing">
+
+<h3>Contact Information</h3>
+<input type="tel" name="Mobile Number" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+<input type="tel" name="Emergency Contact Number" placeholder="Emergency Contact Number" pattern="[0-9]{10}" required>
+<input type="email" name="Email" placeholder="Email Address">
+<textarea name="Address" rows="3" placeholder="Full Address" required></textarea>
+
+<input type="text" name="Aadhaar Number" placeholder="Aadhaar Number (12 digits)" pattern="[0-9]{12}" required>
+<div class="note">
+Aadhaar details will be kept confidential and used only for official admission purposes.
+</div>
+
+<h3>Course & Other Details</h3>
+<select name="Course Opted For" required>
+  <option value="">Course Opted For</option>
+  <option>NEET</option>
+  <option>IIT-JEE</option>
+  <option>Pre-Foundation (9th–10th)</option>
+  <option>Foundation (11th–12th)</option>
+  <option>Other</option>
+</select>
+
+<select name="How did you get to know about Verchas Academy?" required>
+  <option value="">How did you get to know about us?</option>
+  <option>Friends / Seniors</option>
+  <option>Parents / Relatives</option>
+  <option>Teachers / School</option>
+  <option>Social Media</option>
+  <option>Website / Google</option>
+  <option>Poster / Banner</option>
+</select>
+
+<select name="Sibling Registered" required>
+  <option value="">Any sibling already registered?</option>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<button type="submit">Submit Registration</button>
+
+<input type="hidden" name="_subject" value="New Student Registration – Verchas Academy">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="thankyou.html">
+
+</form>
+
+</div>
+
+</body>
+</html>
